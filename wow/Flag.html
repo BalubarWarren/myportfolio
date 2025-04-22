@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    .flag {
+      width: 100%;
+      max-width: 900px;
+      aspect-ratio: 3 / 2; /* 900 / 600 = 3:2 */
+      background-color: #CE1126;
+      position: relative;
+      text-align: center;
+      font-size: 7.8vw; /* scales with screen size */
+      font-weight: bold;
+      color: white;
+      margin: 0 auto;
+    }
+
+    .flag > div {
+      width: 100%;
+      height: 50%; /* 300px out of 600px = 50% */
+      background-color: #002868;
+      position: absolute;
+      top: 25%; /* 150px out of 600px = 25% */
+      left: 0;
+    }
+
+    .flag > div > div {
+      width: 22.22%; /* 200px out of 900px ≈ 22.22% */
+      aspect-ratio: 1 / 1; /* maintain circle shape */
+      background-color: white;
+      border-radius: 50%;
+      position: absolute;
+      top: 16.66%; /* 50px out of 300px (stripe height) ≈ 16.66% */
+      left: 38.88%; /* 350px out of 900px ≈ 38.88% */
+    }
+
+    .flag p {
+      margin: 0;
+      padding-top: 1.1vw; /* scaled padding */
+    }
+
+    .flag > div > div > p {
+      color: black;
+      text-align: center;
+      line-height: 1; /* adjusted for responsiveness */
+      font-size: 6vw;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flag">
+    <p>The Flag</p>
+    <div>
+      <div>
+        <p>of Laos</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

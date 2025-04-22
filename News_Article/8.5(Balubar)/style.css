@@ -1,0 +1,54 @@
+body{
+text-align: center;
+background-color: cyan;
+}
+
+.head-article{
+    background-color: aliceblue;
+    display: inline-block;
+    max-width: max-content;
+}
+.img1{
+    height: 100%;
+    border: 5px dashed black;
+    border-radius: 3%;
+}
+
+p{
+    text-align: justify;
+}
+
+h2{
+    text-align: left;
+}
+
+.img2{
+    float: center ;
+}
+
+@media (max-width: 500px) and (min-width: 500px){
+    body {
+        display: inline;
+    }
+  }
+
+  @media (max-width: 1200px) and (min-width: 481px){
+      body{
+        display: inline;
+      }
+    }
+
+    @media (max-width: 1600px) and (min-width: 1201px){
+      body{
+        display: block;
+      }
+    }
+
+    @media (min-width: 1601px){
+      body{
+        display: block;
+      }
+        .img2{
+        size: 2500%;
+      }
+    }
